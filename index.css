@@ -88,7 +88,7 @@ ul li {
 	width: 890px;
 	position: relative;
 	height: 230px;
-	background: url(images/G20-02.jpg) no-repeat;
+	background: url(G20-02.jpg) no-repeat;
 	background-size: 48%;
 	background-position: 100% 80%;
 }
@@ -207,7 +207,7 @@ ul#menu li a:hover {
 
 .sidebar li a, .sidebar li a:hover {
 	position: relative;
-	background: url(images/link-01.png) no-repeat left center;
+	background: url(link-01.png) no-repeat left center;
 	background-size: 5%;
 	padding: 0 0 0 40px;
 	display: block;
@@ -240,7 +240,7 @@ ul#menu li a:hover {
 
 #content ul li {
 	list-style: none;
-	background: url(images/bullet.png) no-repeat;
+	background: url(bullet.png) no-repeat;
 	margin: 0 0 6px 0;
 	padding: 0 0 4px 25px;
 	line-height: 1.5em;
