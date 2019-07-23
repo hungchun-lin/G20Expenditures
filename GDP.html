@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>G20 Country Spending (GDP)</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="GDP.css" title="style" />
+  <script type="text/javascript"
+	        src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript"
+			src="GDP.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Spending Behavier<span class="logo_color"> </br> - 10 Countries of G20</span></a></h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Healthcare.html">Healthcare</a></li>
+          <li><a href="Military.html">Military</a></li>
+          <li class="selected"><a href="GDP.html">Impact of GDP</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Designer</h3>
+        <h4>HungChun Lin</h4>
+		<h5>Data Science Program
+		</br>Columbian College of Arts and Sciences</br>George Washington University</h5>
+        <h5><a href="hungchun_lin@gwu.edu">hungchun_lin@gwu.edu</a></h5>
+        <p>This website is my first project for visualizing the complex data</p>
+		<h5>Instructor: Dr. Nima Zahadat</h5>
+        <h3>Resourse Links</h3>
+        <ul>
+		  <li><a href="https://www.worldbank.org/">World Bank</a></li>
+          <li><a href="https://developers.google.com/chart/interactive/docs/gallery">Google Gallery</a></li>
+          <li><a href="https://www.data.gov/">Government Datasets</a></li>
+          <li><a href="https://www.kaggle.com/">Kaggle Datasets</a></li>
+          <li><a href="https://www.plot.ly/">Plotly</a></li>
+        </ul>
+      </div>
+    <div id="content">
+        <h1>Gross Domestic Product (GDP)</h1>
+        <p>Gross domestic product (GDP) is a monetary measure of the market value of all the final goods and services 
+		produced in a specific time period, often annually.</p>
+		
+		<h1>GDP defination</h1>
+		<p>The OECD defines GDP as "an aggregate measure of production equal to the sum of the gross values added 
+		of all resident and institutional units engaged in production (plus any taxes, and minus any subsidies, 
+		on products not included in the value of their outputs)." An IMF publication states that "GDP measures the monetary value 
+		of final goods and services—that are bought by the final user—produced in a country in a given period of time (say a quarter or a year)."
+		</br>
+		Total GDP can also be broken down into the contribution of each industry or sector of the economy. 
+		The ratio of GDP to the total population of the region is the per capita GDP and the same is called Mean Standard of Living. 
+		GDP is considered the "world's most powerful statistical indicator of national development and progress".</br>Information got from <a href="https://en.wikipedia.org/wiki/Gross_domestic_product">Wiki Pedia</a> </p>
+		</br>
+		<h5>Reference: </br>
+	    [1]"Finance & Development". Finance & Development | F&D. Retrieved 2019-02-23.</br>
+		[2]"Gross Domestic Product | U.S. Bureau of Economic Analysis (BEA)". www.bea.gov. Retrieved 2019-02-23.</br>
+		[3]Hall, Mary. "What Is Purchasing Power Parity (PPP)?". Investopedia. Retrieved 2019-02-23.</br>
+		[4]"OECD". Retrieved 14 August 2014. </br>
+		[5]Callen, Tim. "Gross Domestic Product: An Economy's All". IMF. Retrieved 3 June 2016. </br>
+		[6]Dawson, Graham (2006). Economics and Economic Change. FT / Prentice Hall. p. 205. ISBN 0-273-69351-4. </br>
+		[7]Lepenies, Philipp (2016). The Power of a Single Number: A Political History of GDP. New York: Columbia University Press. ISBN 978-0-231-17510-4.</h5>
+	
+	<br /><br /><br />
+	
+	<!--Google API-->
+	<div class="graph">
+	
+	<div class="description_graph">Average GDP of 10 countries from 2011 to 2016 (in billion)</div>
+	<div id="GDP_average_div"
+			style="width:700px; height:400px;"></div>
+	
+	<div class="description_graph">Correlation between GDP/Capita and Education expenditure/Capita</div>
+	<div id="GDP_Education_div"
+			style="width:700px; height:400px;"></div>
+	<p>Calculating the correlation between the <span class='country_color'>GDP/Capita</span> and <span class='country_color'>Education expenditure/Capita</span>, we got the <span class='highlight'>R square = 0.92</span>,
+	which means the correlation between them is <span class='highlight'>pretty high</span>.</p>
+			
+	<div class="description_graph">Correlation between GDP/Capita and Healthcare expenditure/Capita</div>
+	<div id="GDP_Healthcare_div"
+			style="width:700px; height:400px;"></div>
+	<p>Calculating the correlation between the <span class='country_color'>GDP/Capita</span> and <span class='country_color'>Healthcare expenditure/Capita</span>, we got the <span class='highlight'>R square = 0.87</span>,
+	which means the correlation between them is <span class='highlight'>high</span>.</p>
+			
+	<div class="description_graph">Correlation between GDP/Capita and Military expenditure/Capita</div>
+	<div id="GDP_Military_div"
+			style="width:700px; height:400px;"></div>
+	<p>Calculating the correlation between the <span class='country_color'>GDP/Capita</span> and <span class='country_color'>Military expenditure/Capita</span>, we got the <span class='highlight'>R square = 0.64</span>,
+	which is <span class='highlight'>lower</span> than the other two expenditures.</p>
+	</br>
+	
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>	
+   
+    </div>
+	</div><!-- content -->
+	</div><!--site - content-->
+     
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script>
+    </div>
+  </div><!-- main -->
+</body>
+</html>

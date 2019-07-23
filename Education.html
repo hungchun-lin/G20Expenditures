@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>G20 Country Spending (Education)</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="Education.css" title="style" />
+  <script type="text/javascript"
+	        src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript"
+			src="Education.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Spending Behavier<span class="logo_color"> </br> - 10 Countries of G20</span></a></h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Overview</a></li>
+          <li class="selected"><a href="Education.html">Education</a></li>
+          <li><a href="Healthcare.html">Healthcare</a></li>
+          <li><a href="Military.html">Military</a></li>
+          <li><a href="GDP.html">Impact of GDP</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Designer</h3>
+        <h4>HungChun Lin</h4>
+		<h5>Data Science Program
+		</br>Columbian College of Arts and Sciences</br>George Washington University</h5>
+        <h5><a href="hungchun_lin@gwu.edu">hungchun_lin@gwu.edu</a></h5>
+        <p>This website is my first project for visualizing the complex data</p>
+		<h5>Instructor: Dr. Nima Zahadat</h5>
+        <p></p>
+        <h3>Resourse Links</h3>
+        <ul>
+		  <li><a href="https://www.worldbank.org/">World Bank</a></li>
+          <li><a href="https://developers.google.com/chart/interactive/docs/gallery">Google Gallery</a></li>
+          <li><a href="https://www.data.gov/">Government Datasets</a></li>
+          <li><a href="https://www.kaggle.com/">Kaggle Datasets</a></li>
+          <li><a href="https://www.plot.ly/">Plotly</a></li>
+        </ul>
+      </div>
+    <div id="content">
+        <h1>Expenditure on Education</h1>
+        <p>This analysis about Expenditure of Education has been calculated from the data 
+		we collected from <a href="https://data.worldbank.org/indicator/NY.ADJ.AEDU.CD">World Bank</a>.</p>
+		
+		<h1>Data despription</h1>
+		<p>The graphs below covered the 10 countries: Australia, United States, South Africa,
+		Argentina, Brazil, Mexico, France, Germany, Italy and Indonesia, the years covered from 2011 to 2016.</p>
+		</br>
+		<h5>*Every country of G20 is missing the data of Expenditure on Education in 2017.</h5>
+	
+	<br /><br /><br />
+	
+	<!--Google API-->
+	<div class="graph">
+	
+	<div class="description_graph">Expenditure on Education in absolute value (USD)</div>
+	<div id="Education_abs_div"
+			style="width:600px; height:300px;"></div>
+	<p>From this graph, we can see the <span class='country_color'>United States</span> is the country which spends the <span class='highlight'>most money</span> on 
+	the Education, and <span class='country_color'>India</span> is which spends the <span class='highlight'>least</span>.</p>
+	
+	<div class="description_graph">Expenditure on Education in the percentage of GDP</div>
+	<div id="Education_GDP_div"
+			style="width:600px; height:300px;"></div>
+	<p>From this graph, we can see <span class='country_color'>Brazil</span> is the country which spends the 
+	<span class='highlight'>highest</span> percentage of the GDP on 
+	the Education, and <span class='country_color'>China</span> is which spends the <span class='highlight'>least</span> percentage of the GDP.</p>
+			
+	<div class="description_graph">Expenditure on Education in absolute value of per Capita (USD)</div>		
+	<div id="Education_per_div"
+			style="width:600px; height:300px;"></div>		
+	
+	<div class="description_graph">The expenditure on Education vs Military</div>
+	<div id="Education_Military_div"
+			style="width:600px; height:300px;"></div>
+	<p>This graph shows that the expenditure on <span class='country_color'>Education</span> is always <span class='highlight'>higher</span> than the expenditure 
+	on <span class='country_color'>Military</span>.</p>
+			
+	<div class="description_graph">The growth of expenditure on Education in absolutely value (2011 - 2016)</div>
+	<div id="Education_growth_div"
+			style="width:600px; height:300px;"></div>
+	<p>From this graph, we can see that <span class='country_color'>China</span> <span class='highlight'>increases</span> the expenditure on 
+	the Education the most, and <span class='country_color'>Japan</span> <span class='highlight'>decreases</span> the expenditure on Education the most.</p>
+			
+	<div class="description_graph">The growth of expenditure on Education in % GDP (2011 - 2016)</div>
+	<div id="Education_growth_GDP_div"
+			style="width:600px; height:300px;"></div>
+	<p>From this graph, we can see that <span class='country_color'>Brazil</span> <span class='highlight'>increases</span> the percentage of the GDP on 
+	the Education the most, and <span class='country_color'>United State</span> <span class='highlight'>decreases</span> the expenditure on Education the most.</p>
+	
+	<div class="description_graph">Average expenditure on Education in billion from 2011 to 2016 (USD)</div>
+	<div id="Education_spread_div"
+			style="width:600px; height:420px;"></div>
+	
+	<div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	
+	</div><!--Google API-->
+	</div><!-- content -->
+	</div><!--site - content-->  
+    
+	
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script>
+    </div>
+ </div> <!-- main -->
+ 
+</body>
+</html>
